@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mealify</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media_layout.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.7.2-web/css/all.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,9 +14,6 @@
       rel="stylesheet"
     />
     <link rel="icon" href="img/mealify/favicon.png" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/media_layout.css" />
-    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
   </head>
   <body>
     <!-- ------NavBar------ -->
@@ -43,10 +43,7 @@
           </ul>
         </div>
         <div class="navbar-modeswitch">
-          <img
-            src="img/mealify/plate_dish_food_dinnerware_icon_260731.ico"
-            alt=""
-          />
+          <i class="fa-solid fa-moon"></i>
         </div>
       </div>
     </div>
@@ -64,12 +61,15 @@
               <button class="contact-btn">
                 <a href="#contact">Book a Table</a>
               </button>
-              <div class="home-button-deco"></div>
-              <button class="watch-btn">
-                <a href="https://youtube.com"
-                  ><i class="fa-solid fa-circle-play"></i>Watch a Video</a
-                >
-              </button>
+              <div class="watch-btn-group">
+                <div class="watch-btn-icon">
+                <i class="fa-solid fa-play"></i></div>
+                <button class="watch-btn">
+                  <a href="https://youtube.com"
+                    ></i>Watch a Video</a
+                  >
+                </button>
+              </div>
             </div>
           </ul>
         </div>
@@ -302,12 +302,7 @@
             />
           </div>
           <div class="contact-input" id="messagebox">
-            <input
-              type="text"
-              name="message"
-              id="message"
-              placeholder="Message"
-            />
+            <textarea placeholder="Type your message..."></textarea>
           </div>
         </div>
         <div class="contact-button">
